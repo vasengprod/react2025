@@ -1,0 +1,67 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #e6f0fa, #f2f4f7);
+  color: #1a202c;
+}
+
+/* Centraliza o conteúdo da página (body) */
+body {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
+  padding: 40px;
+  height: 100vh; /* ocupa altura total da viewport */
+}
+
+/* Container geral */
+.container {
+  max-width: 900px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente o card */
+  align-items: center; /* centraliza verticalmente */
+}
+
+/* Card de perfil */
+.profile-card {
+  display: flex;
+  flex-direction: column; /* empilha imagem + texto */
+  align-items: center; /* centraliza itens dentro do card */
+  gap: 20px;
+  text-align: center; /* centraliza texto */
+}
+
+/* Imagem do perfil */
+.profile-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; /* círculo */
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto do perfil */
+.profile-info h2 {
+  font-size: 1.5rem;
+  color: #1a365d;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.profile-info p {
+  color: #4a5568;
+  font-size: 1rem;
+  max-width: 400px;
+}
